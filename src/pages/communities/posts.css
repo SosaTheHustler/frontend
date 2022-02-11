@@ -1,0 +1,97 @@
+.table-head {
+  display: flex;
+}
+
+.table-head div {
+  padding: 5px;
+  margin: 2px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+}
+
+.table-head .subjects {
+  flex: 70%;
+}
+
+.table-head .replies {
+  flex: 10%;
+}
+
+.table-head .last-reply {
+  flex: 15%;
+}
+
+.subjects div {
+  color: white;
+  padding-bottom: 5px;
+}
+
+.table-row {
+  display: flex;
+  box-shadow: 0px 0px 4px rgb(0, 0, 0);
+  background-color: rgb(24, 24, 24);
+  margin-top: 10px;
+}
+
+.table-row .subjects,
+.table-row .replies,
+.table-row .last-reply {
+  padding: 5px;
+  margin: 2px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.table-row .subjects div {
+  color: red;
+  font-size: 15px;
+}
+
+.table-row .subjects p {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.table-row .subjects {
+  flex: 70%;
+}
+
+.table-row .replies {
+  flex: 10%;
+}
+
+.table-row .last-reply {
+  flex: 15%;
+}
+
+.subjects span {
+  font-size: 8px;
+}
+
+/* Single Post */
+.post-description {
+  white-space: pre-wrap;
+  padding: 50px;
+  color: white;
+}
+
+.post-image2 {
+  width: 50%;
+}
+
+.container {
+  min-height: 100vh;
+  height: 100%;
+}
+
+.post-flex {
+  display: flex;
+}
+
+.flex-image {
+  width: 50%;
+}

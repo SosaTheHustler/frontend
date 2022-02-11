@@ -1,0 +1,145 @@
+html,
+body {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+body > * {
+  flex-shrink: 0;
+}
+
+.background {
+  background-color: #202020;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-grow: 1;
+}
+
+.column {
+  flex-direction: column;
+}
+.logout {
+  border: none;
+  margin-top: 50px;
+  width: 200px !important;
+}
+
+.logout:hover {
+  width: 350px !important;
+}
+.form-container {
+  width: 400px;
+  height: 500px;
+  background-color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 4px rgb(0, 0, 0);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.form input,
+textarea {
+  width: 60%;
+  margin: 10px;
+  padding: 14px 10px;
+  border: none;
+  border-radius: 24px;
+  transition: 0.25s;
+  background-color: #181818;
+  resize: none;
+}
+
+.form input:hover {
+  outline: none !important;
+  border: 2px solid red;
+}
+
+.form textarea:hover {
+  outline: none !important;
+  border: 2px solid red;
+}
+
+.form input[type="text"]:focus {
+  outline: none !important;
+  border: 2px solid red;
+  width: 90%;
+}
+
+.form textarea[type="text"]:focus {
+  outline: none !important;
+  border: 2px solid red;
+  width: 90%;
+}
+
+.form input[type="email"]:focus {
+  outline: none !important;
+  border: 2px solid red;
+  width: 90%;
+}
+
+.form input[type="password"]:focus {
+  outline: none !important;
+  border: 2px solid red;
+  width: 90%;
+}
+
+.submit {
+  color: white;
+}
+
+.submit:hover {
+  border: none !important;
+  outline: none !important;
+  cursor: pointer;
+  background-color: red;
+  transition-duration: 0.6s;
+}
+
+.form p {
+  color: lightgray;
+  font-size: 10px;
+}
+
+.new {
+  background: #202020;
+  width: none;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  width: 90% !important;
+}
+
+@media screen and (max-width: 450px) {
+  .form-container {
+    width: 90%;
+  }
+  .logout {
+    border: none;
+    margin-top: 10px;
+    width: 40% !important;
+  }
+
+  .logout:hover {
+    width: 70% !important;
+  }
+
+  .column h1 {
+    font-size: 20px;
+    padding: 0px 10px;
+  }
+}
